@@ -8,5 +8,5 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
-  testMatch: ['**/tests/unit/*.test.js'],
+  testMatch: ['**/tests/unit/**/*.test.js'],
 };
