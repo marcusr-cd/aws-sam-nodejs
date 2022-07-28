@@ -5,7 +5,7 @@ var event, context;
 
 describe('Tests index', function () {
   it('verifies successful response', async () => {
-    const result = await app.lambdaHandler(event, context)
+    const result = await app.lambdaHandler(event, context);
 
     expect(typeof result).toBe('object');
     expect(result.statusCode).toBe(200);
@@ -14,7 +14,7 @@ describe('Tests index', function () {
     const response = JSON.parse(result.body);
 
     expect(typeof response).toBe('object');
-    expect(response.message).toBe("hello world");
+    expect(response.message).toBe('hello world');
     // expect(response.location).to.be("string");
   });
 });
